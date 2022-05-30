@@ -167,13 +167,22 @@ ul {
   fill: var(--primary-text-color);
 }
 
-.icon-smartphone:hover,
+/*.icon-smartphone:hover,
 .icon-smartphone:focus {
   fill: var(--accent-color);
 }
-
 .icon-envelope:hover,
 .icon-envelope:focus {
+  fill: var(--accent-color);
+}*/
+
+.auth-nav-link:hover .icon-envelope,
+.auth-nav-link:focus .icon-envelope {
+  fill: var(--accent-color);
+}
+
+.auth-nav-link:hover .icon-smartphone,
+.auth-nav-link:focus .icon-smartphone {
   fill: var(--accent-color);
 }
 
@@ -329,6 +338,8 @@ ul {
 
 .command-link {
   display: flex;
+  width: 100%;
+  height: 100%;
   align-items: center;
   justify-content: center;
   width: 44px;
@@ -340,12 +351,12 @@ ul {
 .command-link:focus {
   background-color: var(--accent-color);
 }
-.icon-command-instagram {
+/*.icon-command-instagram {
   fill: var(--icons-fill-color);
-}
+}*/
 
-.icon-command-instagram:hover,
-.icon-command-instagram:focus {
+.command-link:hover .icon-command,
+.command-link:focus .icon-command {
   fill: var(--primary-background-color);
 }
 
@@ -440,22 +451,6 @@ ul {
   border-radius: 4px;
 }
 
-/*.clients-list .item {
-  display: flex;
-  width: 170px;
-  height: 92px;
-  justify-content: center;
-  align-items: center;
-
-  border: 1px solid var(--icons-fill-color);
-  border-radius: 4px;
-}
-
-.clients-list .item:hover,
-.clients-list .item:focus {
-  border-color: var(--accent-color);
-}**/
-
 .icon-clients {
   fill: var(--icons-fill-color);
 }
@@ -463,8 +458,8 @@ ul {
 .clients-list .item:not(:first-child) {
   margin-left: 30px;
 }
-.icon-clients:hover,
-.icon-clients:focus {
+.clients-link:hover .icon-clients,
+.clients-link:focus .icon-client {
   fill: var(--accent-color);
 }
 
@@ -691,8 +686,8 @@ ul {
   border-bottom: 1px solid #eeeeee;
 }
 
-.benefits-list a:hover,
-.benefits-list a:focus {
+.benefits-list .portfolio-link:hover,
+.benefits-list .portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
