@@ -436,6 +436,8 @@ ul {
 
 .clients-list {
   display: flex;
+  margin-top: 0px;
+  margin-bottom: 0px;
   padding-left: 0;
   justify-content: center;
 }
