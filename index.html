@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"/>
     <link rel="stylesheet" href="./css/styles.css"/>
 <body>
+    <!--Header-->
  <header class="header">
       <nav class="container navigation">
         <a lang="en" class="logo" href="./index.html"
@@ -48,7 +49,7 @@
     <section class="hero overlay">
     <div class="container hero-main">
                 <h1 class="hero-title">Ефективні рішення<br>для вашого бізнесу</h1>
-        <button type="button" class="button-primary-main">Замовити послугу</button>
+        <button type="button" class="button-primary-main" data-modal-open>Замовити послугу</button>
         </div>
     </section>
     <!--Feacher-list-->
@@ -254,6 +255,7 @@
 </div>
 </section>
 </main>
+<!--Footer-->
 <footer class="footer">
     <div class="container footer-block">
         <div class="address">
@@ -301,5 +303,17 @@
         </div>
     </div>
 </footer>
+
+<div class="backdrop is-hidden" data-modal>
+<div class="modal">
+    <button class="btn-close" data-modal-close>
+        <svg class="icon-btn-close" width="30px" height="30px">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
+        </svg>
+    </button> 
+</div>
+</div>
+<script src="./js/modal.js"></script>
 </body>
 </html>
+
